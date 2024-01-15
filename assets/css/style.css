@@ -361,9 +361,45 @@ body {
   min-width: 260px;
   padding: 10px;
   border-radius: var(--radius-large);
+  box-shadow: var(--shadow-1);
   visibility: hidden;
   opacity: 0;
+  scale: 0.4;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+  transform-origin: top right;
+  z-index: 4;
 }
+
+.navbar.active {
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+}
+
+.navbar,
+.navbar-list,
+.navbar-wrapper {
+  display: grid;
+  gap: 8px;
+}
+
+.navbar-link,
+.btn-link {
+  color: var(--neutral-30);
+  padding: 6px 12px;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.btn-link {
+  border-color: 1px solid var(--neutral-90);
+  padding-block-start: 14px;
+}
+
+:is(.navbar-link, .btn-link):is(:hover, :focus-visible),
+.navbar-link.active { color: var(--primary-100);}
+
+.navbar .btn { min-width: 100%; }
+
 
 /*-----------------------------------*\
   #HERO
