@@ -10,9 +10,9 @@ $navToggler.addEventListener("click", () => $navbar.classList.toggle("active"));
 
 /** state-scroll-head **/
 
-const /** {elementNode} **/ $header = document.querySelector("{data-header}");
+const /** {elementNode} **/ $header = document.querySelector("[data-header]");
 
-window.addEventListener("scroll" e => {
+window.addEventListener("scroll", e => {
     $header.classList[window.scrollY > 50 ? "add" : "remove"]("active")
 });
 

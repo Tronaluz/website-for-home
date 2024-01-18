@@ -348,10 +348,10 @@ body {
 }
 
 .nav-toggle-btn .close,
-.nav-toggle-btn.activr .open{ display: none;}
+.nav-toggle-btn.active .open { display: none;}
 
 .nav-toggle-btn .open,
-.nav-toggle-btn.active .close {display: block;}
+.nav-toggle-btn.active .close { display: block;}
 
 .navbar {
   position: absolute;
@@ -391,7 +391,7 @@ body {
 }
 
 .btn-link {
-  border-color: 1px solid var(--neutral-90);
+  border-block-color: 1px solid var(--neutral-90);
   padding-block-start: 14px;
 }
 
