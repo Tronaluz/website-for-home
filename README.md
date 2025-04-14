@@ -69,6 +69,3 @@ A implementação atual inclui:
 
 Desenvolvido por Tronaluz
 
-## Licença
-
-[Sua licença escolhida]
